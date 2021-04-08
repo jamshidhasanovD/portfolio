@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+    <header>
+
+        <a href="index.html" class="logo">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="46px" height="46px" viewBox="0 0 46 46" enable-background="new 0 0 46 46" space="preserve">
+                <path fill="#0f141e"
+                    d="M22.953,0A23,23,0,1,0,45.909,23,22.978,22.978,0,0,0,22.953,0Zm0,43A20,20,0,1,1,42.915,23,19.981,19.981,0,0,1,22.953,43Zm5.055-16.727L24.83,16.009h-3.5l-3.178,10.24-2.529-10.24H11.99L16.162,32H19.75l3.286-10.6L26.3,32h3.523L34,16.009h-3.5Z">
+                </path>
+            </svg>
+            <div class="d-block">
+                <p>Jamshid Hasanov</p>
+                <p>Frontend devoloper</p>
+            </div>
+        </a>
+
+        <nav class="nav">
+            <div class="links">
+                <p>MENU</p>
+                <a href="projects.html" class="">Projects</a>
+                <a href="about-me.html" class="active">About me</a>
+                <a href="contact.html" class="">Contact</a>
+            </div>
+            <div class="close-navbar">
+                <span>CLOSE</span>
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="nav__footer">
+                <p>&copy; 2021 Made by Jamshid</p>
+            </div>
+        </nav>
+
+        <span id="navbar-toggler-icon">
+            MENU
+            <i class="fas fa-bars"></i>
+        </span>
+
+    </header>
+    
+    <main>
+
+        <section id="my-location-map">
+            <div class="map">
+                <div id="map"></div>
+                <div class="row">
+                    <div class="col">
+                        <i>L</i>
+                        <i>E</i>
+                        <i>T'</i>
+                        <i>S</i>
+                    </div>
+                    <div class="col">
+                        <i>W</i>
+                        <i>O</i>
+                        <i>R</i>
+                        <i>K</i>
+                    </div>
+                    <div class="col">
+                        <i>T</i>
+                        <i>O</i>
+                        <i>G</i>
+                        <i>E</i>
+                    </div>
+                    <div class="col">
+                        <i>T</i>
+                        <i>H</i>
+                        <i>E</i>
+                        <i>R</i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form-section">
+            <div class="row">
+                <div class="col">
+                    <p>CONTACT</p>
+                    <p class="title">
+                        Get in touch — let’s work together.
+                    </p>
+                    <div>
+                        <p>ADDRESS</p>
+                        <p>
+                            Damian Watracz <br>
+                            Os. Oświecenia 12 <br>
+                            31-635 Krakow <br>
+                            Poland, EU
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <p class="title">
+                        Got a project? Drop me a line if you want 
+                        to work together on something exciting. 
+                        Big or small. Mobile or web.
+                    </p>
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <p>Your Name</p>
+                                <input type="text" required placeholder="What's your name ?">
+                            </div>
+                            <div class="col">
+                                <p>Your Email</p>
+                                <input type="text" required placeholder="What's your email address ?">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>Service</p>
+                                <input type="text" required placeholder="What are you interested in ?">
+                            </div>
+                            <div class="col">
+                                <p>Budget</p>
+                                <input type="text" required placeholder="What's your budget ?">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="alone-col">
+                                <p>Message</p>
+                                <input type="text" placeholder="What's your message ?">
+                            </div>
+                        </div>
+                        <button type="submit"><i class="far fa-envelope"></i> Send message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <a href="contact.html" target="_blank" class="contact-link">
+            <i class="far fa-envelope"></i>
+            <span>Contact me</span>
+        </a>
+
+        <a id="scroll-top" class="animate__animated" type="button">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </main>
+    
+
+    <footer>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <p>Contact</p>
+                <p>information</p>
+                <p>
+                    Feel free to reach out to me any time.
+                    I prefer to talk over email, especially
+                    since we may be a few time zones away.
+                </p>
+                <a href="https://hasanovj682@gmail.com" target="_blank"><span>E:</span> hasanovj682@gmail.com</a>
+                <p><span>P:</span> +998-99-075-5406</p>
+            </div>
+            <div class="col">
+                <p>Lates</p>
+                <p>projects</p>
+                <a href="project-7.html">Iceland</a><br>
+                <pre> </pre>
+                <a href="project-1.html">Basic UX</a><br>
+                <pre> </pre>
+                <a href="project-2.html">Triniso</a><br>
+                <pre> </pre>
+                <a href="project-3.html">Symova</a><br>
+                <pre> </pre>
+                <a href="project-4.html">PMR</a><br>
+                <pre> </pre>
+                <a href="index.html">All projects</a>
+            </div>
+            <div class="col">
+                <p>Current</p>
+                <p>availability</p>
+                <p>
+                    I usually work on several projects but I’ll
+                    be happy to discuss new opportunities. Let’s get in touch!
+                </p>
+            </div>
+            <div class="col">
+                <p>Follow</p>
+                <p>me on</p>
+                <a href="https://instagram.com">Instagram</a><br>
+                <pre> </pre>
+                <a href="https://twitter.com">twitter</a><br>
+                <pre> </pre>
+                <a href="https://linkedin.com">LinkedIn</a>
+                <pre> </pre>
+            </div>
+        </div>
+        <div class="copyright">
+            <a href="index.html">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px"
+                    y="0px" width="46px" height="46px" viewBox="0 0 46 46" enable-background="new 0 0 46 46"
+                    space="preserve">
+                    <path fill="#0f141e"
+                        d="M22.953,0A23,23,0,1,0,45.909,23,22.978,22.978,0,0,0,22.953,0Zm0,43A20,20,0,1,1,42.915,23,19.981,19.981,0,0,1,22.953,43Zm5.055-16.727L24.83,16.009h-3.5l-3.178,10.24-2.529-10.24H11.99L16.162,32H19.75l3.286-10.6L26.3,32h3.523L34,16.009h-3.5Z">
+                    </path>
+                </svg>
+            </a>
+            <p>
+                © 2008 — 2019 Damian Watracz. <br>
+                Made with &hearts; in Krakow, Poland.
+            </p>
+        </div>
+    </footer>
+    
+    <div class="loader-window show">
+        <div class="loader">
+            
+        </div>
+        <p><span>CONTACT</span><br>Get in touch</p>
+        <img src="assets/images/loader-contact.jpg" alt="">
+    </div>
+
+    <script>
+        // function initMap(){
+        //     let map = new 
+        // }
+    </script>
+
+      <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+    <script src="js/contact.js"></script>
+    <script src="js/general.js"></script>
+</body>
+</html>

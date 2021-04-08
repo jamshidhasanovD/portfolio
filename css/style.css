@@ -1,0 +1,964 @@
+body {
+  font-family: "Helvetica Now Display DW",sans-serif;
+  padding: 0;
+  margin: 0; }
+  body header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    z-index: 50 !important; }
+    body header .logo {
+      display: flex;
+      text-decoration: none;
+      align-items: flex-start;
+      z-index: 20;
+      transition: .5s; }
+      body header .logo svg {
+        margin-right: 10px; }
+        body header .logo svg path {
+          transition: .5s; }
+      body header .logo .d-block {
+        display: block;
+        text-align: start; }
+        body header .logo .d-block p {
+          transition: .5s; }
+        body header .logo .d-block p:first-child {
+          font-size: 20px;
+          font-weight: 800;
+          color: black;
+          margin-top: 0;
+          letter-spacing: -1px;
+          margin-bottom: 0; }
+        body header .logo .d-block p:last-child {
+          margin-top: 0;
+          font-size: 12px;
+          color: black;
+          letter-spacing: 2px;
+          font-weight: 600; }
+      body header .logo:hover svg path {
+        fill: darkgrey !important; }
+      body header .logo:hover .d-block p {
+        color: darkgrey !important; }
+    body header nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      height: 0;
+      max-width: 100%;
+      width: 100%;
+      background-color: #0F141E;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transition: .5s;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }
+      body header nav .links {
+        display: block;
+        text-align: center;
+        transition: .3s; }
+        body header nav .links a {
+          display: block;
+          font-size: 40px;
+          text-decoration: none;
+          color: #878A8F;
+          font-weight: 600;
+          margin: 8px 0;
+          transition: .5s; }
+          body header nav .links a:hover {
+            color: #fff; }
+        body header nav .links a.active {
+          color: #fff !important; }
+        body header nav .links p {
+          color: #808288;
+          letter-spacing: 2px; }
+      body header nav p {
+        color: #53575E;
+        font-size: 13px; }
+      body header nav .close-navbar {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        color: #878A8F;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer; }
+        body header nav .close-navbar span {
+          font-size: 12px;
+          font-weight: 800;
+          margin-right: 10px;
+          letter-spacing: 1px;
+          transition: .5s;
+          display: none; }
+        body header nav .close-navbar i {
+          transition: .5s;
+          font-size: 30px; }
+        body header nav .close-navbar:hover span {
+          color: #fff; }
+        body header nav .close-navbar:hover i {
+          color: #fff;
+          transform: rotate(90deg); }
+      body header nav .nav__footer {
+        position: absolute;
+        bottom: 20px;
+        right: 45%;
+        width: 100%;
+        max-width: 100% !important;
+        left: 0;
+        text-align: center; }
+        body header nav .nav__footer p {
+          display: flex;
+          flex-wrap: nowrap;
+          width: 100%;
+          justify-content: center;
+          cursor: default; }
+        body header nav .nav__footer p::selection {
+          background: transparent; }
+    body header #navbar-toggler-icon {
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: .5s; }
+      body header #navbar-toggler-icon:hover {
+        color: darkgrey !important; }
+        body header #navbar-toggler-icon:hover i {
+          color: darkgrey !important; }
+      body header #navbar-toggler-icon i.fas.fa-bars {
+        font-size: 20px;
+        margin-left: 10px;
+        transition: .5s; }
+  body main section#hero .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    body main section#hero .wrapper .content-left, body main section#hero .wrapper .content-right {
+      width: 47%; }
+      body main section#hero .wrapper .content-left img, body main section#hero .wrapper .content-right img {
+        width: 100%;
+        height: 100%; }
+    body main section#hero .wrapper .content-left p:nth-child(1) {
+      font-size: 15px;
+      color: #878A8F;
+      letter-spacing: 2px;
+      margin-bottom: 20px; }
+    body main section#hero .wrapper .content-left p:nth-child(2) {
+      font-size: 3.875rem;
+      font-weight: 700;
+      letter-spacing: -4px;
+      margin-top: 0;
+      margin-bottom: 0; }
+    body main section#hero .wrapper .content-left p:nth-child(3) {
+      font-size: 1.375rem;
+      margin-top: 20px;
+      color: #878a8f; }
+    body main section#hero .wrapper .content-left .d-flex {
+      display: flex;
+      justify-content: flex-start; }
+      body main section#hero .wrapper .content-left .d-flex a {
+        text-decoration: none;
+        color: black;
+        transition: .5s;
+        font-weight: 600;
+        position: relative; }
+        body main section#hero .wrapper .content-left .d-flex a::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -4px;
+          height: 2px;
+          background-color: black;
+          width: 100%;
+          transition: .5s;
+          opacity: 0; }
+        body main section#hero .wrapper .content-left .d-flex a:hover::before {
+          opacity: 1; }
+      body main section#hero .wrapper .content-left .d-flex a:first-child {
+        margin-right: 10px; }
+      body main section#hero .wrapper .content-left .d-flex p {
+        margin: 0;
+        margin-right: 10px;
+        letter-spacing: 0;
+        font-size: 15px;
+        color: #878a8f; }
+  body main section#projects, body main section#personal-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+    body main section#projects .projects__title, body main section#personal-projects .projects__title {
+      width: 100%;
+      padding: 0 35px;
+      padding-bottom: 40px; }
+      body main section#projects .projects__title p, body main section#personal-projects .projects__title p {
+        color: #9DA0A4;
+        margin-bottom: 0;
+        font-size: 15px;
+        letter-spacing: 2px; }
+      body main section#projects .projects__title h1, body main section#personal-projects .projects__title h1 {
+        color: #0F141E;
+        font-size: 60px;
+        font-weight: 800;
+        margin-top: 15px; }
+    body main section#projects a.project, body main section#personal-projects a.project {
+      width: 45%;
+      max-height: 700px;
+      height: 700px;
+      text-decoration: none;
+      position: relative;
+      margin: 30px 0;
+      transition: .5s;
+      overflow: hidden; }
+      body main section#projects a.project img.bg-img, body main section#personal-projects a.project img.bg-img {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: .5s;
+        object-fit: cover; }
+      body main section#projects a.project .background-color, body main section#personal-projects a.project .background-color {
+        transition: .5s;
+        max-height: 100% !important;
+        height: 100%; }
+      body main section#projects a.project .text, body main section#personal-projects a.project .text {
+        padding: 30px 50px;
+        position: absolute;
+        left: 0;
+        top: 30px; }
+        body main section#projects a.project .text p:nth-child(1), body main section#personal-projects a.project .text p:nth-child(1) {
+          color: #9DA0A4;
+          font-size: 15px;
+          letter-spacing: 3px;
+          transition: .5s;
+          margin-bottom: 30px;
+          position: relative !important;
+          padding-left: 7px; }
+        body main section#projects a.project .text h1.project-name, body main section#personal-projects a.project .text h1.project-name {
+          color: #fff;
+          font-size: 35px;
+          font-weight: 700;
+          transition: .5s;
+          margin-right: 150px; }
+        body main section#projects a.project .text h1.text-dark, body main section#personal-projects a.project .text h1.text-dark {
+          color: #0F141E !important; }
+        body main section#projects a.project .text .view-project, body main section#personal-projects a.project .text .view-project {
+          color: #9DA0A4;
+          font-weight: 700;
+          display: flex;
+          transition: .5s;
+          opacity: 0; }
+          body main section#projects a.project .text .view-project i, body main section#personal-projects a.project .text .view-project i {
+            margin-left: 10px; }
+      body main section#projects a.project:hover .bg-img, body main section#personal-projects a.project:hover .bg-img {
+        height: 105%;
+        width: 105%;
+        object-fit: cover; }
+      body main section#projects a.project:hover .text, body main section#personal-projects a.project:hover .text {
+        z-index: 1; }
+        body main section#projects a.project:hover .text h1.text-dark, body main section#personal-projects a.project:hover .text h1.text-dark {
+          color: #fff !important; }
+      body main section#projects a.project:hover .background-color, body main section#personal-projects a.project:hover .background-color {
+        position: sticky;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(17, 21, 30, 0.9); }
+      body main section#projects a.project:hover span.badge, body main section#personal-projects a.project:hover span.badge {
+        border-color: #fff;
+        z-index: 1; }
+      body main section#projects a.project:hover .view-project, body main section#personal-projects a.project:hover .view-project {
+        opacity: 1; }
+      body main section#projects a.project span.badge, body main section#personal-projects a.project span.badge {
+        position: absolute;
+        transition: .5s;
+        border: 2px solid transparent;
+        right: 25px;
+        top: 25px;
+        font-size: 11px;
+        font-weight: 800;
+        color: #fff;
+        padding: 15px 7px;
+        border-radius: 50%;
+        letter-spacing: 1px;
+        background-color: #0E1322; }
+  body main section#personal-projects .projects__title {
+    margin-top: 80px; }
+  body main section#personal-projects a.project {
+    max-height: 450px !important;
+    overflow: hidden;
+    position: relative;
+    padding-top: 0; }
+    body main section#personal-projects a.project p:nth-child(1) {
+      margin-top: 0; }
+    body main section#personal-projects a.project .text h1 {
+      color: #0F141E !important;
+      margin-top: 0; }
+    body main section#personal-projects a.project:hover .text h1 {
+      color: #e7e4e4 !important; }
+    body main section#personal-projects a.project .bacgkround-color {
+      max-height: 100%; }
+  body main section#instagram-section .instagram-section-title {
+    max-width: 100%;
+    padding: 50px 40px; }
+    body main section#instagram-section .instagram-section-title p {
+      color: darkgrey;
+      font-size: 15px; }
+    body main section#instagram-section .instagram-section-title h1 {
+      color: #0F141E;
+      font-size: 60px;
+      font-weight: 600;
+      margin-top: 10px; }
+  body main section#instagram-section div:last-child {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%; }
+    body main section#instagram-section div:last-child a {
+      max-width: 30%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 450px;
+      text-decoration: none;
+      position: relative;
+      width: 30%; }
+      body main section#instagram-section div:last-child a:hover .instagram-section__item-content {
+        opacity: 1; }
+        body main section#instagram-section div:last-child a:hover .instagram-section__item-content .content {
+          margin-bottom: -25px; }
+      body main section#instagram-section div:last-child a .instagram-section__item-content {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+        transition: .5s;
+        opacity: 0; }
+        body main section#instagram-section div:last-child a .instagram-section__item-content .content {
+          text-align: center;
+          padding: 0 70px;
+          margin-bottom: -55px;
+          transition: .5s;
+          display: block; }
+          body main section#instagram-section div:last-child a .instagram-section__item-content .content i {
+            color: #fff;
+            font-size: 30px; }
+          body main section#instagram-section div:last-child a .instagram-section__item-content .content p {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 140%; }
+          body main section#instagram-section div:last-child a .instagram-section__item-content .content span {
+            color: grey;
+            font-size: 14px; }
+    body main section#instagram-section div:last-child a:nth-child(1) {
+      background-image: url(/assets/images/instagram/insta-1.jpg); }
+    body main section#instagram-section div:last-child a:nth-child(2) {
+      background-image: url(/assets/images/instagram/insta-2.jpg); }
+    body main section#instagram-section div:last-child a:nth-child(3) {
+      background-image: url(/assets/images/instagram/insta-3.jpg); }
+  body main section#lets-talk-section {
+    display: block;
+    text-align: center;
+    padding: 100px 0; }
+    body main section#lets-talk-section p {
+      font-size: 15px;
+      color: grey;
+      letter-spacing: 1px; }
+    body main section#lets-talk-section a {
+      text-decoration: none;
+      position: relative;
+      font-size: 60px;
+      color: #0F141E;
+      font-weight: 600; }
+      body main section#lets-talk-section a::before {
+        content: '';
+        height: 5px;
+        background-color: #0F141E;
+        position: absolute;
+        bottom: -12px;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        transition: .5s; }
+      body main section#lets-talk-section a:hover::before {
+        opacity: 1; }
+      body main section#lets-talk-section a i {
+        margin-left: 20px;
+        font-size: 40px; }
+  body main a.contact-link {
+    position: fixed;
+    left: 30px;
+    bottom: 40px;
+    background-color: rgba(15, 20, 30, 0.5);
+    display: flex;
+    overflow: hidden;
+    padding: 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    max-width: 15px;
+    max-height: 15px;
+    z-index: 9;
+    transition: .5s; }
+    body main a.contact-link i {
+      color: #fff !important; }
+    body main a.contact-link span {
+      color: #fff !important;
+      font-size: 13px;
+      margin-left: 15px;
+      white-space: nowrap;
+      opacity: 0;
+      transition: .4s; }
+    body main a.contact-link:hover {
+      max-width: 150px;
+      background-color: #0f141e; }
+      body main a.contact-link:hover span {
+        opacity: 1; }
+  body main a#scroll-top {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    background-color: rgba(15, 20, 30, 0.5);
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    max-width: 15px;
+    max-height: 15px;
+    z-index: 9;
+    cursor: pointer; }
+    body main a#scroll-top i {
+      color: #fff !important; }
+    body main a#scroll-top:hover {
+      background-color: #0f141e; }
+  body footer {
+    width: 100%; }
+    body footer hr {
+      width: 94%;
+      margin: 0 auto;
+      background-color: darkgrey !important;
+      margin-bottom: 50px; }
+    body footer .row {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      padding-left: 20px; }
+      body footer .row .col {
+        padding: 0 20px; }
+        body footer .row .col p {
+          margin: 0; }
+        body footer .row .col p:nth-child(1) {
+          color: #0F141E !important;
+          font-size: 25px;
+          font-weight: 600; }
+        body footer .row .col p:nth-child(2) {
+          color: #0F141E !important;
+          font-size: 25px;
+          font-weight: 600;
+          margin-bottom: 15px;
+          display: flex;
+          align-items: center;
+          position: relative; }
+          body footer .row .col p:nth-child(2)::after {
+            content: '';
+            min-width: 20px;
+            height: 3px;
+            background-color: #0F141E;
+            margin-left: 5px; }
+        body footer .row .col p:nth-child(3) {
+          color: grey !important;
+          font-size: 14px;
+          line-height: 150%;
+          margin-bottom: 20px; }
+      body footer .row .col:nth-child(1) {
+        width: 35%; }
+        body footer .row .col:nth-child(1) p:last-child {
+          color: #0F141E;
+          font-weight: 600;
+          margin: 5px 0; }
+          body footer .row .col:nth-child(1) p:last-child span {
+            color: darkgrey;
+            font-weight: 600; }
+        body footer .row .col:nth-child(1) a {
+          color: #0F141E;
+          text-decoration: none;
+          font-weight: 600;
+          margin: 7px 0;
+          border-bottom: 1px solid transparent;
+          transition: .4s;
+          padding-bottom: 3px; }
+          body footer .row .col:nth-child(1) a:hover {
+            border-color: #0F141E; }
+          body footer .row .col:nth-child(1) a span {
+            color: darkgrey;
+            font-weight: 600; }
+      body footer .row .col:nth-child(2) {
+        display: block; }
+        body footer .row .col:nth-child(2) a {
+          color: #0F141E;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 15px;
+          border-bottom: 1px solid transparent;
+          padding: 3px 0;
+          transition: .4s; }
+          body footer .row .col:nth-child(2) a:hover {
+            border-color: #0F141E; }
+        body footer .row .col:nth-child(2) pre {
+          margin: 0;
+          height: 7px; }
+      body footer .row .col:nth-child(3) {
+        width: 25%; }
+      body footer .row .col:nth-child(4) a {
+        color: #0F141E;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+        border-bottom: 1px solid transparent;
+        padding: 3px 0;
+        transition: .4s; }
+        body footer .row .col:nth-child(4) a:hover {
+          border-color: #0F141E; }
+      body footer .row .col:nth-child(4) pre {
+        margin: 0;
+        height: 7px; }
+    body footer .copyright {
+      margin-left: 40px;
+      display: flex;
+      align-items: center;
+      height: 80px; }
+      body footer .copyright p {
+        color: darkgrey;
+        font-size: 14px;
+        margin-left: 15px; }
+      body footer .copyright a svg path {
+        fill: darkgrey !important; }
+
+.loader-window {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: .5s; }
+  .loader-window .loader {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    z-index: 1;
+    animation-name: loaderAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 1s; }
+  .loader-window p {
+    z-index: 1;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 20px;
+    left: 20px; }
+    .loader-window p span {
+      font-size: 15px;
+      color: darkgrey;
+      letter-spacing: 2px; }
+@keyframes loaderAnimation {
+  0% {
+    opacity: .2;
+    transform: scale(0); }
+  25% {
+    opacity: .3; }
+  50% {
+    opacity: .5; }
+  75% {
+    opacity: .7; }
+  100% {
+    opacity: .2;
+    transform: scale(1); } }
+  .loader-window img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover; }
+
+.loader-window.show {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  bottom: 0;
+  transition: .5s; }
+
+@media (max-width: 480.9px) {
+  body header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 10px; }
+    body header .logo svg {
+      display: none; }
+    body header nav .logo {
+      left: 10px; }
+    body header nav .close-navbar {
+      right: 10px; }
+    body header nav .links a {
+      font-size: 26px; }
+    body header nav .links a.active-page span {
+      width: 35px;
+      left: -40px; }
+  body main section#hero .wrapper {
+    flex-wrap: wrap !important;
+    flex-direction: column-reverse; }
+    body main section#hero .wrapper .content-left {
+      width: 92%; }
+      body main section#hero .wrapper .content-left p:nth-child(1) {
+        font-size: 13px; }
+      body main section#hero .wrapper .content-left p:nth-child(2) {
+        font-size: 25px;
+        letter-spacing: 0; }
+      body main section#hero .wrapper .content-left p:nth-child(3) {
+        font-size: 13px; }
+      body main section#hero .wrapper .content-left .d-flex p {
+        font-size: 13px; }
+    body main section#hero .wrapper .content-right {
+      width: 100%;
+      position: relative;
+      height: 240px; }
+      body main section#hero .wrapper .content-right img {
+        position: absolute;
+        bottom: -150px;
+        height: 380px;
+        width: auto;
+        right: 0;
+        z-index: -1; }
+  body main section#projects {
+    flex-wrap: wrap;
+    justify-content: center; }
+    body main section#projects .projects__title {
+      padding: 30px 0;
+      width: 92%; }
+      body main section#projects .projects__title p {
+        margin-bottom: 0; }
+      body main section#projects .projects__title h1 {
+        padding-top: 0;
+        margin-top: 0;
+        font-size: 25px; }
+    body main section#projects a {
+      max-height: 550px !important;
+      min-width: 95%; }
+      body main section#projects a .text {
+        padding-top: 0 !important;
+        padding-left: 20px !important; }
+        body main section#projects a .text p {
+          margin-top: 0 !important;
+          padding-top: 0 !important;
+          padding-left: 0 !important; }
+        body main section#projects a .text h1 {
+          width: 100%;
+          margin-right: 0 !important;
+          word-break: break-all;
+          font-size: 25px !important; }
+        body main section#projects a .text .view-project {
+          display: none !important; }
+  body main section#personal-projects {
+    flex-wrap: wrap; }
+    body main section#personal-projects .projects__title {
+      padding: 50px 0;
+      width: 95%;
+      margin: 0 auto; }
+      body main section#personal-projects .projects__title p {
+        font-size: 13px;
+        margin-bottom: 0;
+        padding: 0; }
+      body main section#personal-projects .projects__title h1 {
+        font-size: 25px !important; }
+    body main section#personal-projects a {
+      max-height: 400px !important;
+      min-width: 95% !important; }
+      body main section#personal-projects a .text h1 {
+        font-size: 25px !important;
+        margin-right: 0 !important; }
+    body main section#personal-projects a:last-child {
+      margin: 0 auto; }
+  body main .contact-link {
+    display: none !important; }
+  body main section#instagram-section .instagram-section-title p {
+    font-size: 13px;
+    margin-bottom: 0; }
+  body main section#instagram-section .instagram-section-title h1 {
+    font-size: 25px; }
+  body main section#instagram-section div:last-child {
+    display: flex;
+    flex-wrap: wrap !important;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto; }
+    body main section#instagram-section div:last-child a {
+      height: 290px !important;
+      min-width: 100% !important;
+      margin-bottom: 20px; }
+      body main section#instagram-section div:last-child a .instagram-section__item-content .content {
+        max-height: 50%;
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+        padding-bottom: 11px !important;
+        overflow: hidden; }
+        body main section#instagram-section div:last-child a .instagram-section__item-content .content p {
+          max-height: 100% !important;
+          text-overflow: ellipsis; }
+  body main #lets-talk-section p {
+    font-size: 13px !important;
+    margin-bottom: 0; }
+  body main #lets-talk-section a {
+    font-size: 25px !important; }
+    body main #lets-talk-section a i {
+      font-size: 15px !important; }
+  body footer .row {
+    flex-wrap: wrap;
+    max-width: 100%; }
+    body footer .row .col {
+      width: 100% !important;
+      padding: 0;
+      margin-bottom: 30px; }
+    body footer .row .col:nth-child(1), body footer .row .col:nth-child(3) {
+      text-align: start; }
+      body footer .row .col:nth-child(1) p:nth-child(2), body footer .row .col:nth-child(3) p:nth-child(2) {
+        justify-content: flex-start; }
+    body footer .row .col:nth-child(2), body footer .row .col:nth-child(4) {
+      text-align: end; }
+      body footer .row .col:nth-child(2) p:nth-child(2), body footer .row .col:nth-child(4) p:nth-child(2) {
+        justify-content: flex-end; }
+  body footer .copyright {
+    margin-left: 10px; } }
+@media (min-width: 481px) and (max-width: 768.9px) {
+  body header {
+    background-color: rgba(255, 255, 255, 0.9); }
+    body header nav .logo {
+      left: 10px; }
+    body header nav .close-navbar {
+      right: 10px; }
+    body header nav .links a {
+      font-size: 26px; }
+    body header nav .links a.active-page span {
+      width: 35px;
+      left: -40px; }
+  body main section#hero .wrapper .content-left p:nth-child(1) {
+    font-size: 13px; }
+  body main section#hero .wrapper .content-left p:nth-child(2) {
+    font-size: 30px;
+    letter-spacing: 0; }
+  body main section#hero .wrapper .content-left p:nth-child(3) {
+    font-size: 15px; }
+  body main section#hero .wrapper .content-left .d-flex p {
+    font-size: 14px; }
+  body main section#projects {
+    flex-wrap: wrap;
+    justify-content: center; }
+    body main section#projects .projects__title {
+      padding: 30px 0;
+      width: 94%; }
+      body main section#projects .projects__title p {
+        margin-bottom: 0; }
+      body main section#projects .projects__title h1 {
+        padding-top: 0;
+        margin-top: 0;
+        font-size: 30px; }
+    body main section#projects a {
+      max-height: 750px !important;
+      min-width: 95%; }
+      body main section#projects a .text {
+        padding-top: 0 !important;
+        padding-left: 20px !important; }
+        body main section#projects a .text p {
+          margin-top: 0 !important;
+          padding-top: 0 !important;
+          padding-left: 0 !important; }
+        body main section#projects a .text h1 {
+          width: 100%;
+          margin-right: 0 !important;
+          word-break: break-all;
+          font-size: 25px !important; }
+        body main section#projects a .text .view-project {
+          display: none !important; }
+  body main section#personal-projects {
+    flex-wrap: wrap; }
+    body main section#personal-projects .projects__title {
+      padding: 50px 0;
+      width: 95%;
+      margin: 0 auto; }
+      body main section#personal-projects .projects__title p {
+        font-size: 14px;
+        margin-bottom: 0;
+        padding: 0; }
+      body main section#personal-projects .projects__title h1 {
+        font-size: 40px !important; }
+    body main section#personal-projects a {
+      max-height: 400px !important;
+      min-width: 95% !important; }
+      body main section#personal-projects a .text h1 {
+        font-size: 25px !important;
+        margin-right: 0 !important; }
+    body main section#personal-projects a:last-child {
+      margin: 0 auto; }
+  body main .contact-link {
+    display: none !important; }
+  body main section#instagram-section .instagram-section-title p {
+    font-size: 15px;
+    margin-bottom: 0; }
+  body main section#instagram-section .instagram-section-title h1 {
+    font-size: 35px; }
+  body main section#instagram-section div:last-child {
+    display: flex;
+    flex-wrap: wrap !important;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto; }
+    body main section#instagram-section div:last-child a {
+      height: 290px !important;
+      min-width: 49% !important;
+      margin-bottom: 20px; }
+      body main section#instagram-section div:last-child a .instagram-section__item-content .content {
+        max-height: 50%;
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+        padding-bottom: 11px !important;
+        overflow: hidden; }
+        body main section#instagram-section div:last-child a .instagram-section__item-content .content p {
+          max-height: 100% !important;
+          text-overflow: ellipsis; }
+  body main #lets-talk-section p {
+    font-size: 15px !important;
+    margin-bottom: 0; }
+  body main #lets-talk-section a {
+    font-size: 35px !important; }
+    body main #lets-talk-section a i {
+      font-size: 25px !important; }
+  body footer .row {
+    flex-wrap: wrap;
+    max-width: 100%; }
+    body footer .row .col {
+      width: 45% !important;
+      padding: 0;
+      margin-bottom: 30px; }
+    body footer .row .col:nth-child(1), body footer .row .col:nth-child(3) {
+      text-align: start; }
+      body footer .row .col:nth-child(1) p:nth-child(2), body footer .row .col:nth-child(3) p:nth-child(2) {
+        justify-content: flex-start; }
+    body footer .row .col:nth-child(2), body footer .row .col:nth-child(4) {
+      text-align: end; }
+      body footer .row .col:nth-child(2) p:nth-child(2), body footer .row .col:nth-child(4) p:nth-child(2) {
+        justify-content: flex-end; } }
+@media (min-width: 769px) and (max-width: 1024.9px) {
+  body header {
+    background-color: rgba(255, 255, 255, 0.9); }
+    body header nav .close-navbar span {
+      display: block; }
+  body main section#projects .projects__title {
+    padding-top: 60px; }
+    body main section#projects .projects__title p {
+      font-size: 15px; }
+    body main section#projects .projects__title h1 {
+      font-size: 35px;
+      margin: 0; }
+  body main section#projects a {
+    max-height: 450px !important; }
+    body main section#projects a .text {
+      padding-top: 0 !important; }
+      body main section#projects a .text p {
+        margin-top: 0 !important;
+        padding-top: 0 !important; }
+      body main section#projects a .text h1 {
+        width: 100%;
+        margin-right: 0 !important;
+        word-break: break-all;
+        font-size: 25px !important; }
+  body main section#personal-projects .projects__title p {
+    font-size: 15px;
+    margin-bottom: 0; }
+  body main section#personal-projects .projects__title h1 {
+    font-size: 35px;
+    margin-top: 0; }
+  body main section#personal-projects a {
+    max-height: 400px !important; }
+    body main section#personal-projects a .text h1 {
+      font-size: 25px !important;
+      margin-right: 0 !important; }
+  body main section#instagram-section .instagram-section-title p {
+    font-size: 15px;
+    margin-bottom: 0; }
+  body main section#instagram-section .instagram-section-title h1 {
+    font-size: 35px; }
+  body main section#instagram-section a {
+    height: 300px !important; }
+    body main section#instagram-section a .instagram-section__item-content .content {
+      max-height: 50%;
+      padding-left: 18px !important;
+      padding-right: 18px !important;
+      padding-bottom: 11px !important;
+      overflow: hidden; }
+      body main section#instagram-section a .instagram-section__item-content .content p {
+        max-height: 100% !important;
+        text-overflow: ellipsis; }
+  body main #lets-talk-section p {
+    font-size: 15px !important;
+    margin-bottom: 0; }
+  body main #lets-talk-section a {
+    font-size: 35px !important; }
+    body main #lets-talk-section a i {
+      font-size: 25px !important; }
+  body footer .row {
+    flex-wrap: wrap;
+    max-width: 100%; }
+    body footer .row .col {
+      width: 45% !important;
+      padding: 0;
+      margin-bottom: 30px; }
+    body footer .row .col:nth-child(1), body footer .row .col:nth-child(3) {
+      text-align: start; }
+      body footer .row .col:nth-child(1) p:nth-child(2), body footer .row .col:nth-child(3) p:nth-child(2) {
+        justify-content: flex-start; }
+    body footer .row .col:nth-child(2), body footer .row .col:nth-child(4) {
+      text-align: end; }
+      body footer .row .col:nth-child(2) p:nth-child(2), body footer .row .col:nth-child(4) p:nth-child(2) {
+        justify-content: flex-end; } }
+@media (min-width: 1025px) and (max-width: 1200.9px) {
+  body header nav .close-navbar span {
+    display: block; } }
+@media (min-width: 1201px) and (max-width: 1600.9px) {
+  body header nav .close-navbar span {
+    display: block; } }
+
+/*# sourceMappingURL=style.css.map */
