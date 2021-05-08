@@ -558,13 +558,13 @@ body {
         fill: darkgrey !important; }
 
 .loader-window {
-  height: 0;
+  height: 100%;
   width: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: 60;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -611,18 +611,7 @@ body {
     object-fit: cover; }
 
 .loader-window.show {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 60;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  bottom: 0;
-  transition: .5s; }
+  display: flex; }
 
 @media (max-width: 480.9px) {
   body header {

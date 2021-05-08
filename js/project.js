@@ -141,7 +141,9 @@ document.querySelector('#scroll-top').onclick = function () {
 
 
 window.onload = function () {
-    document.querySelector('.loader-window').classList.remove('show');
+    setTimeout(function(){
+        document.querySelector('.loader-window').classList.remove('show');
+    })
 }
 
 

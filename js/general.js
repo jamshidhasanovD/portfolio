@@ -16,11 +16,21 @@ setInterval(function(){
 
 
 
-document.getElementById('lets-talk-section').children[1].href = 'contact.html';
+
+let aTags = [];
+
+document.querySelectorAll('a').forEach(item=>{
+    aTags.push(item);
+})
 
 
 
 
+for(let i=0;i<aTags.length;i++){
+    if(aTags[i].href != '#' && aTags[i].getAttribute('href')){
+        aTags[i].setAttribute('target','_blank');
+    }
+}
 
 
 
