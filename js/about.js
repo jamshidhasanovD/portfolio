@@ -147,7 +147,9 @@ document.querySelector('.slick-prev').innerHTML = '<i class="fas fa-arrow-left">
 
 
 window.onload = function () {
-    document.querySelector('.loader-window').classList.remove('show')
+    setTimeout(function(){
+        document.querySelector('.loader-window').classList.remove('show')
+    })
 }
 
 
